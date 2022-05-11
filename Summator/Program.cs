@@ -16,7 +16,7 @@ namespace Summator
                 Console.WriteLine("Fail");
             }
 
-            long average = Summator.Average(new int[] { 5, 10, 15 });
+            double average = Summator.Average(new int[] { 5, 10, 15 });
             if (average == 10)
             {
                 Console.WriteLine("Pass");
