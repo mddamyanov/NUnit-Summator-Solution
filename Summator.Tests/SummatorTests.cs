@@ -60,15 +60,15 @@ namespace Summator.Tests
         [Test]
         public void Test_Average_TwoPossitiveNumbers()
         {
-            long actual = Summator.Average(new int[] {5, 7 });
-            int expected = 6;
-            Assert.AreEqual(expected, actual);
+            double actual = Summator.Average(new int[] {5, 8 });
+            //double expected = 6.5;
+            Assert.AreEqual(6.5, actual);
         }
 
         [Test]
         public void Test_Average_OnePossitiveNumber()
         {
-            long actual = Summator.Average(new int[] { 6 });
+            double actual = Summator.Average(new int[] { 6 });
             int expected = 6;
             Assert.AreEqual(expected, actual);
         }
@@ -76,7 +76,7 @@ namespace Summator.Tests
         [Test]
         public void Test_Average_TwoNegativeNumbers()
         {
-            long actual = Summator.Average(new int[] { -7, -9 });
+            double actual = Summator.Average(new int[] { -7, -9 });
             int expected = -8;
 
             Assert.AreEqual(expected, actual);
@@ -85,7 +85,7 @@ namespace Summator.Tests
         [Test]
         public void Test_Average_BigValues()
         {
-            long actual = Summator.Average(new int[] { 2000000000, 2000000000, 2000000000, 2000000000 });
+            double actual = Summator.Average(new int[] { 2000000000, 2000000000, 2000000000, 2000000000 });
             Assert.AreEqual(2000000000, actual);
         }
 
